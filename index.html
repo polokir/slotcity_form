@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.cdnfonts.com/css/gilroy-bold?styles=20876,20879,20880"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+
+
+        <div class="form">
+            <h2 class="title">Реєстрація</h2>
+            <img src="./img/652х180_wb.webp" alt="" class="mobile-picture">
+            <ul class="button-list">
+                <li class="button-item">
+                  <button class="button tel active" type="button">Телефон</button>
+                </li>
+                <li class="button-item">
+                  <button class="button email" type="button">Email</button>
+                </li>
+            </ul>
+
+            <form class="contact-form">
+                <div class="field">
+                    <input required type="tel" name="tel" id="number" placeholder="Вкажіть ваш номер">
+                    <div class="country-code">
+                        <img src="./img/ukr.png" class="country-flag" alt="ukraine">
+                        <p class="country-number">+380</p>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <input required type="password" name="pass" id="password" placeholder="Введіть пароль">
+                </div>
+
+                <div class="field">
+                    <input required type="checkbox" name="check" id="check">
+                    <span class="rules">Мені 21 рік, і я погоджуюсь з Правилами</span>
+                </div>
+
+                <button href="google.com" type="submit" class="submit">Реєстрація</button>
+            </form>
+        </div>
+    </div>
+  </body>
+  <script src="./script/script.js"></script>
+</html>
