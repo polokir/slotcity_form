@@ -37,9 +37,7 @@ function hadleForm(event) {
   const form = event.currentTarget;
   const { tel, email } = form.elements;
 
-  const apiUrl = "http://localhost:4444/register";
-
-  
+  const apiUrl = (email) ? `http://localhost:4444/register?email=${email.value}` : `http://localhost:4444/register?phone=${tel.value}`
 
   const data = {
     phone: tel?.value,
