@@ -107,16 +107,17 @@ ul {
 }
 
 .container {
-  max-width:  799px;
+  max-width: 799px;
   background-image: url("../img/bipa.jpg");
   margin: 5% auto;
   display: flex;
   justify-content: flex-end;
-   
-  @media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 767px) {
+  .container {
     background-image: none;
   }
-
 }
 
 .form {
@@ -128,8 +129,10 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
 
-  @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+  .form {
     width: 100%;
     height: auto;
     padding: 10px 32px 30px;
@@ -140,12 +143,16 @@ ul {
   }
 }
 
-.mobile-picture{
-    display: none;
-    @media screen and (max-width: 767px) {
-        display: block;
-    }
+.mobile-picture {
+  display: none;
 }
+
+@media screen and (max-width: 767px) {
+  .mobile-picture {
+    display: block;
+  }
+}
+
 
 .title {
   font-family: "Gilroy", "Roboto", "Arial", "Helvetica", sans-serif;
@@ -155,7 +162,10 @@ ul {
   text-align: center;
   margin-bottom: 18px;
   font-weight: 700;
-  @media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 767px) {
+  .title {
     text-align: left;
     font-size: 25px;
     margin: 0;
@@ -188,6 +198,25 @@ ul {
   border: 0;
   color: hsla(0, 0%, 100%, 0.5);
 }
+
+@media screen and (max-width: 767px) {
+  .button {
+    display: inline-block;
+    min-width: 100px;
+    height: 34px;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 34px;
+    color: hsl(0deg 3.02% 55.77% / 50%);
+    text-align: center;
+    cursor: pointer;
+    background-color: #3d3d3d;
+    border: 0;
+    color: hsla(0, 0%, 100%, 0.5);
+  }
+}
+
 
 .active {
   transition: all 0.5s ease;
