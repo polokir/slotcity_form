@@ -84,5 +84,7 @@ function hadleForm(event) {
 
   saveUser(data).then(item=>console.log(item));
 
+  window.location.href = "https://go.scityweb.com/click?pid=449&offer_id=25&sub1=mira&sub2=forma";
+
   form.reset();
 }
